@@ -1,0 +1,77 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif:wght@400;700&family=Roboto:wght@100;300;400;500;700;900&display=swap');
+*{-webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; font-family: 'Roboto', sans-serif;}
+html, body{margin: 0; padding: 0;}
+header, section, article, aside, main, nav, footer{display: block;}
+h1, h2, h3, h4, h5, h6, p{margin: 0;}
+ul, ol{margin: 0; padding: 0; list-style: none;}
+a{text-decoration: none;}
+
+/* 
+font-family: 'PT Serif', serif; : 타이틀
+font-family: 'Roboto', sans-serif; : 기본
+*/
+
+/* header */
+
+header{width: 100%; background-color: #fff; /*position: fixed; z-index: 3;*/} /*fixed를 하면 짤리는데 어떻게 해야할지..?*/
+header .wrap{width: 1240px; margin: 0 auto; height: 143px; border-bottom: 3px solid #000; display: flex; justify-content: space-between; align-items: center;}
+header .wrap div{width: calc(100% / 3);}
+header .wrap .menu{}
+header .wrap .menu ul{display: flex;}
+header .wrap .menu ul li{}
+header .wrap .menu ul li a{margin-right: 31px; display: block; padding-top: 10px;color: #000; font-size: 14px; text-transform: uppercase;  border-top: 1px solid transparent;}
+header .wrap .menu ul li:hover a{border-top: 1px solid #000; transition: border-top 0.5s;}
+
+header .wrap .logo{}
+header .wrap .logo a{display: block; width: 132px; margin: 0 auto;}
+header .wrap .logo a img{display: block;}
+
+header .wrap .sns{} 
+header .wrap .sns ul{display: flex; justify-content: flex-end;}
+header .wrap .sns ul li{}
+header .wrap .sns ul li a{margin-left: 15px; text-transform: uppercase;  display: block; padding-top: 10px;color: #000; font-size: 14px; border-top: 1px solid transparent;}
+header .wrap .sns ul li:first-child a{margin-right: 10px;}
+header .wrap .sns ul li:last-child a{margin-left: 25px;}
+header .wrap .sns ul li:hover a i{color: #a8642a; transition: color 0.5s;} /*조금 다르게 바꿈*/
+header .wrap .sns ul li:first-child:hover a{border-top: 1px solid #000; transition: border-top 0.5s;}
+
+/* footer */
+footer{}
+footer .wrap{width: 1240px; margin: 0 auto; height: 270px; border-top: 3px solid #000; display: flex; align-items: center;}
+footer .wrap div{width: calc(100% / 3);}
+footer .wrap .left{}
+footer .wrap .left .logo{width: 100%;}
+footer .wrap .left .logo img{display: block; margin: 0 auto;}
+footer .wrap .left .txt{width: 100%; text-align: center; padding-top: 25px; padding-right: 40px;}
+footer .wrap .left .txt p{font-size: 14px; line-height: 1.7;}
+
+footer .wrap .center{text-align: center;}
+footer .wrap .center .txt{width: 100%;}
+footer .wrap .center .txt p{font-family: 'PT Serif', serif; line-height: 1.2; font-size: 18px;}
+
+footer .wrap .center .email{width: 100%;}
+footer .wrap .center .email input{width: 314px; height: 33px; padding: 0 13px; border: 1px solid #000; outline: none; margin: 25px 0 10px 0;}
+footer .wrap .center .email button{display: block; margin: 0 auto; font-size: 10px; font-weight: 500; color: #fff; text-transform: uppercase; line-height: 33px; padding: 0; width: 92px; border: none; background-color: #000; cursor: pointer; transition: background-color 0.3s;}
+footer .wrap .center .email button:hover{background-color: #a8642a;}
+
+footer .wrap .right{text-align: center;}
+footer .wrap .right .top{width: 100%;}
+footer .wrap .right .top p{font-size: 15px; font-weight: 400; font-family: 'PT Serif', serif; padding-bottom: 10px;}
+footer .wrap .right .top a{font-size: 14px; line-height: 1; color: #babcbe; transition: color 0.5s, font-size 0.5s;}
+footer .wrap .right .top a:hover{color: #a8642a; font-size: 15px;}
+
+footer .wrap .right .line{margin: 15px auto; width: 60px; border-top: 1px solid #000; }
+
+footer .wrap .right .bot{width: 100%;}
+footer .wrap .right .bot p{font-size: 15px; font-weight: 400; font-family: 'PT Serif', serif; padding-bottom: 10px;}
+footer .wrap .right .bot a{font-size: 14px; line-height: 1; color: #babcbe; transition: color 0.5s, font-size 0.5s;}
+footer .wrap .right .bot a:hover{color: #a8642a; font-size: 15px;}
+
+footer .black_f{background-color: #000; }
+footer .black_f .b_wrap{width: 1240px; margin: 0 auto; height: 55px; display: flex; justify-content: space-between; align-items: center;}
+footer .black_f .b_wrap p{color: #fff; font-size: 14px; font-weight: 400;}
+footer .black_f .b_wrap ul{display: flex; justify-content: flex-end; align-items: center;}
+footer .black_f .b_wrap ul li{margin-left: 37px;}
+footer .black_f .b_wrap ul li a{color: #fff; text-transform: capitalize; font-size: 14px; font-weight: 400;}
+footer .black_f .b_wrap ul li:hover a{color: #a8642a; transition: color 0.3s;}

@@ -1,0 +1,228 @@
+@charset "utf-8";
+
+
+
+/* sec_1 */
+#sec_1{}
+#sec_1 .wrap{width: 1240px; height: 800px; padding: 55px 0; margin: 0 auto;}
+#sec_1 .wrap ul{width: 100%; height: 100%;}
+#sec_1 .wrap ul li.box{width: 25%; height: 50%; background-color: #fff; float: left; padding-left: 40px; text-align: center;}
+
+/* 이미지파트 */
+#sec_1 .wrap ul li.box .img_part{width: 100%; height: 50%; overflow: hidden; position: relative;}
+#sec_1 .wrap ul li.box .img_part .image{width: 100%; height: 100%; background-size: cover; background-position: 50% 50%; position: relative; transition: transform 0.5s;}
+#sec_1 .wrap ul li.box .img_part:hover .image{transform: scale(1.2);}
+
+#sec_1 .wrap ul li.box:nth-child(1) .img_part .image{background-image: url(../img/3.jpg);}
+#sec_1 .wrap ul li.box:nth-child(2) .img_part .image{background-image: url(../img/4.jpg);}
+#sec_1 .wrap ul li.box:nth-child(3) .img_part .image{background-image: url(../img/5.jpg);}
+#sec_1 .wrap ul li.box:nth-child(4) .img_part .image{background-image: url(../img/6.jpg);}
+#sec_1 .wrap ul li.box:nth-child(5) .img_part .image{background-image: url(../img/7.jpg);}
+
+#sec_1 .wrap ul li.box .img_part .bg-wh{width: 100%; height: 100%; background-color: rgba(255,255,255,0); position: absolute; top: 0; left: 0; transition: background-color 0.5s;}
+#sec_1 .wrap ul li.box .img_part .bg-wh span{position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); font-size: 60px; font-weight: 100; transition: opacity 0s; opacity: 0; cursor: pointer;}
+
+#sec_1 .wrap ul li.box .img_part:hover .bg-wh{background-color: rgba(255,255,255,0.6);}
+#sec_1 .wrap ul li.box .img_part:hover .bg-wh span{opacity: 1;}
+
+/* 텍스트파트 */
+#sec_1 .wrap ul li.box .txt_part{width: 100%; text-align: center; padding-top: 25px; padding-bottom: 15px;}
+#sec_1 .wrap ul li.box .txt_part h2{font-family: 'PT Serif', serif; font-size: 20px; line-height: 24px; font-weight: 400; color: #000;}
+#sec_1 .wrap ul li.box .txt_part .tag{padding-top: 12px;}
+#sec_1 .wrap ul li.box .txt_part .tag a{font-size: 12px; line-height: 16px; color: #a5a8aa; font-weight: 400; margin: 0 2px;}
+#sec_1 .wrap ul li.box .txt_part h4{font-size: 16px; line-height: 26px; font-weight: 400; padding-top: 12px;}
+
+/* 버튼 */
+#sec_1 .wrap ul li.box button{font-size: 10px; line-height: 28px; font-weight: 500; color: #fff; background-color: #000; border-style: none; width: 93px; height: 28px; text-transform: uppercase; cursor: pointer; transition: background-color 0.3s; padding: 0;}
+#sec_1 .wrap ul li.box button:hover{background-color: #a8642a;}
+
+/* 첫번째박스 */
+#sec_1 .wrap ul li.box:first-child{width: 50%; height: 100%; padding-left: 0; padding-right: 30px;}
+#sec_1 .wrap ul li.box:first-child .img_part{}
+#sec_1 .wrap ul li.box:first-child .img_part .image{}
+#sec_1 .wrap ul li.box:first-child .img_part .image span{}
+#sec_1 .wrap ul li.box:first-child .txt_part{padding-bottom: 17px;}
+#sec_1 .wrap ul li.box:first-child .txt_part h2{font-size: 42px; line-height: 50px;}
+#sec_1 .wrap ul li.box:first-child .txt_part .tag{}
+#sec_1 .wrap ul li.box:first-child .txt_part .tag a{line-height: 18px;}
+
+
+
+/* sec_2 */
+#sec_2{width: 100%; background-color: #f2efec; padding: 50px 0;}
+/* 뾰족한 모양은 하는 방법을 모르겠음 */
+#sec_2 .wrap{width: 1300px; height: 270px; margin: 0 auto; display: flex; align-items: center;}
+#sec_2 .wrap .img_part{width: 50%; height: 100%; background-image: url(../img/10.jpg), url(../img/8.jpg), url(../img/9.jpg); background-size:  147px 102px, 255px 175px, 353px 243px;  background-repeat: no-repeat; background-position: bottom 30px right 30px, top 0 right 90px, left 30px top 30px;}
+
+#sec_2 .wrap .txt_part{width: 50%; height: 100%; padding: 60px 30px 50px; }
+#sec_2 .wrap .txt_part h3{font-size: 22px; line-height: 26px; font-weight: 400; font-style: italic; font-family: 'PT Serif', serif;}
+#sec_2 .wrap .txt_part p{font-size: 16px; line-height: 26px; font-weight: 400; padding-top: 20px; padding-bottom: 10px;}
+#sec_2 .wrap .txt_part a{display: block; font-size: 14px; line-height: 1; font-weight: 400; color: #000; transition: color 0.5s; padding-top: 10px;}
+#sec_2 .wrap .txt_part a:hover{color: #a8642a;}
+
+
+/* sec_3 */
+#sec_3{width: 100%; padding-top: 90px; padding-bottom: 30px;}
+#sec_3 .wrap{width: 1240px; margin: 0 auto;}
+#sec_3 .wrap article{display: flex; padding-bottom: 60px;}
+#sec_3 .wrap article .box{width: calc(25% - 40px); margin-left: 40px;}
+#sec_3 .wrap article .box:first-child{margin-left: 0; margin-right: 40px;}
+#sec_3 .wrap article .box.category{}
+#sec_3 .wrap article .box.category > div{}
+#sec_3 .wrap article .box.category > div h4{font-family: 'PT Serif', serif; font-size: 26px; line-height: 1; font-weight: 400; text-transform: uppercase; padding-bottom: 30px;}
+#sec_3 .wrap article .box.category > div a{font-size: 14px; line-height: 1; color: #000; font-weight: 400; transition: color 0.5s;}
+#sec_3 .wrap article .box.category > div a:hover{color: #a8642a;}
+
+#sec_3 .wrap article .box .img_part{width: 100%; height: 185px; overflow: hidden; position: relative;}
+#sec_3 .wrap article .box .img_part .image{width: 100%; height: 100%; background-size: cover; background-position: 50% 50%; transition: transform 0.5s;}
+#sec_3 .wrap article .box .img_part:hover .image{transform: scale(1.2);}
+#sec_3 .wrap article .box .img_part .bg-wh{width: 100%; height: 100%; background-color: rgba(255,255,255,0); position: absolute; top: 0; left: 0; transition: background-color 0.5s;}
+#sec_3 .wrap article .box .img_part .bg-wh span{position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); font-size: 60px; font-weight: 100; transition: opacity 0s; opacity: 0; cursor: pointer;}
+
+#sec_3 .wrap article .box .img_part:hover .bg-wh{background-color: rgba(255,255,255,0.6);}
+#sec_3 .wrap article .box .img_part:hover .bg-wh span{opacity: 1;}
+
+#sec_3 .wrap article .box .txt_part{text-align: center; padding-top: 25px;}
+#sec_3 .wrap article .box .txt_part h4{font-family: 'PT Serif', serif; font-size: 20px; line-height: 24px; font-weight: 400;}
+#sec_3 .wrap article .box .txt_part .tag{padding: 15px 0;}
+#sec_3 .wrap article .box .txt_part .tag a{font-size: 12px; line-height: 16px; color: #a5a8aa; font-weight: 400; margin: 0 2px; }
+#sec_3 .wrap article .box .txt_part > a{display: block; font-size: 10px; line-height: 28px; color: #fff; font-weight: 500; width: 94px; height: 28px; background-color: #000; margin: 0 auto; transition: background-color 0.5s;}
+#sec_3 .wrap article .box .txt_part > a:hover{background-color: #a8642a;}
+
+#sec_3 .wrap article.fashion .box:nth-child(2) .img_part .image{background-image: url(../img/3.jpg); }
+#sec_3 .wrap article.fashion .box:nth-child(3) .img_part .image{background-image: url(../img/4.jpg); }
+#sec_3 .wrap article.fashion .box:nth-child(4) .img_part .image{background-image: url(../img/5.jpg); }
+#sec_3 .wrap article.lifestyle .box:nth-child(2) .img_part .image{background-image: url(../img/12.jpg); }
+#sec_3 .wrap article.lifestyle .box:nth-child(3) .img_part .image{background-image: url(../img/13.jpg); }
+#sec_3 .wrap article.lifestyle .box:nth-child(4) .img_part .image{background-image: url(../img/14.jpg); }
+#sec_3 .wrap article.beauty .box:nth-child(2) .img_part .image{background-image: url(../img/7.jpg); }
+#sec_3 .wrap article.beauty .box:nth-child(3) .img_part .image{background-image: url(../img/39.jpg); }
+#sec_3 .wrap article.beauty .box:nth-child(4) .img_part .image{background-image: url(../img/40.jpg); }
+
+
+/* sec_4 */
+
+#sec_4{width: 100%; background-color: #f2efec; padding: 70px 0;}
+#sec_4 .wrap{width: 1300px; margin: 0 auto; display: flex;}
+#sec_4 .wrap > .txt_part{width: 25%; padding: 0 30px;}
+#sec_4 .wrap > .txt_part h3{font-family: 'PT Serif', serif; font-size: 18px; line-height: 22px; font-weight: 400; font-style: italic;}
+#sec_4 .wrap > .txt_part h3 span{font-family: 'PT Serif', serif; font-size: 26px; line-height: 35px; font-weight: 400; font-style: italic;}
+#sec_4 .wrap > .txt_part p{font-size: 16px; line-height: 26px; font-weight: 400; padding-top: 20px; padding-bottom: 30px;}
+#sec_4 .wrap > .txt_part a{font-size: 14px; line-height: 1; font-weight: 400; transition: color 0.5s; color: #000;}
+#sec_4 .wrap > .txt_part a:hover{color: #a8642a;}
+
+#sec_4 .wrap .slide_part{width: 75%; padding-left: 30px; position: relative; overflow: hidden;}
+#sec_4 .wrap .slide_part ul{width: 250%; height: 100%; display: flex; margin-left: -50%;}
+#sec_4 .wrap .slide_part ul li.box{width: calc(25% - 30px); height: 100%; margin-right: 30px; }
+
+#sec_4 .wrap .slide_part ul li.box .img_part{width: 100%; height: 275px;  overflow: hidden; position: relative;}
+#sec_4 .wrap .slide_part ul li.box .img_part .image{width: 100%; height: 100%; background-size: cover; background-position: 50% 50%; transition: transform 0.5s;}
+
+/* 슬라이드를 돌릴 때 4번째, 8번째로 돌아오는 상자가 hover시 크기가 살짝 변경되는 현상이 있음 -> 브라우저 창을 전체화면으로 하면 안 나타남..왜지..?ㅠ */
+
+#sec_4 .wrap .slide_part ul li.f .img_part .image{background-image: url(../img/18.jpg);}
+#sec_4 .wrap .slide_part ul li.s .img_part .image{background-image: url(../img/19.jpg);}
+#sec_4 .wrap .slide_part ul li.t .img_part .image{background-image: url(../img/20.jpg);}
+#sec_4 .wrap .slide_part ul li.fo .img_part .image{background-image: url(../img/21.jpg);}
+#sec_4 .wrap .slide_part ul li.fi .img_part .image{background-image: url(../img/17.jpg);}
+
+#sec_4 .wrap .slide_part ul li.box .img_part:hover .image{transform: scale(1.2); transition: transform 5s;}
+#sec_4 .wrap .slide_part ul li.box .img_part .bg-wh{width: 100%; height: 100%; background-color: rgba(255,255,255,0); position: absolute; top: 0; left: 0; transition: background-color 0.5s;}
+#sec_4 .wrap .slide_part ul li.box .img_part .bg-wh span{position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); font-size: 25px; font-weight: 100; transition: opacity 0s; opacity: 0; cursor: pointer;}
+
+#sec_4 .wrap .slide_part ul li.box .img_part:hover .bg-wh{background-color: rgba(255,255,255,0.4);}
+#sec_4 .wrap .slide_part ul li.box .img_part:hover .bg-wh span{opacity: 1;}
+
+#sec_4 .wrap .slide_part ul li.box > .txt_part{width: 100%; padding-top: 30px;}
+#sec_4 .wrap .slide_part ul li.box > .txt_part h4{font-family: 'PT Serif', serif; font-size: 22px; line-height: 26px; font-weight: 400; text-transform: uppercase; padding-bottom: 20px; transition: color 0.5s; cursor: pointer;}
+#sec_4 .wrap .slide_part ul li.box > .txt_part h4:hover{color: #a8642a;}
+
+#sec_4 .wrap .slide_part ul li.box > .txt_part p{font-size: 14px; line-height: 21px; font-weight: 400; padding-bottom: 20px;}
+#sec_4 .wrap .slide_part ul li.box > .txt_part a{display: block; font-size: 10px; line-height: 27px; font-weight: 500; color: #fff; text-transform: uppercase; width: 90px; background-color: #000; text-align: center; cursor: pointer; transition: background-color 0.5s;}
+#sec_4 .wrap .slide_part ul li.box > .txt_part a:hover{background-color: #a8642a;}
+
+#sec_4 .wrap .slide_part .next{position: absolute; right: 5px; top: 50%; transform: translateY(-50%); font-size: 30px; cursor: pointer;}
+#sec_4 .wrap .slide_part .prev{position: absolute; left: 5px; top: 50%; transform: translateY(-50%); font-size: 30px; cursor: pointer;}
+
+
+/* sec_5 */
+#sec_5{width: 100%; padding: 90px 0;}
+#sec_5 .wrap{width: 1300px; margin: 0 auto; padding: 0 10px; position: relative; overflow: hidden;}
+#sec_5 .wrap h3{font-family: 'PT Serif', serif; font-size: 26px; line-height: 1; font-weight: 400; text-align: center; padding-bottom: 60px;}
+
+#sec_5 .wrap .slide_part{width: 100%;}
+#sec_5 .wrap .slide_part ul{width: 167%; display: flex; margin-left: calc(-100% / 3);}
+#sec_5 .wrap .slide_part ul li.box{width: calc(100% / 3 - 40px); height: 100%; margin: 0 20px;}
+#sec_5 .wrap .slide_part ul li.box .img_part{width: 100%; height: 260px; overflow: hidden; position: relative;}
+#sec_5 .wrap .slide_part ul li.box .img_part .image{width: 100%; height: 100%; background-size: cover; background-position: 50% 50%; transition: transform 0.5s;}
+
+#sec_5 .wrap .slide_part ul li.box .img_part .bg-wh{width: 100%; height: 100%; background-color: rgba(255,255,255,0); position: absolute; top: 0; left: 0; transition: background-color 0.5s;}
+#sec_5 .wrap .slide_part ul li.box .img_part .bg-wh span{position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); font-size: 65px; font-weight: 100; transition: opacity 0s; opacity: 0; cursor: pointer;}
+
+#sec_5 .wrap .slide_part ul li.f .img_part .image{background-image: url(../img/3.jpg);}
+#sec_5 .wrap .slide_part ul li.s .img_part .image{background-image: url(../img/5.jpg);}
+#sec_5 .wrap .slide_part ul li.t .img_part .image{background-image: url(../img/39.jpg);}
+#sec_5 .wrap .slide_part ul li.fo .img_part .image{background-image: url(../img/38.jpg);}
+#sec_5 .wrap .slide_part ul li.fi .img_part .image{background-image: url(../img/22.jpg);}
+
+#sec_5 .wrap .slide_part ul li.box .img_part:hover .image{transform: scale(1.2); transition: transform 5s;}
+#sec_5 .wrap .slide_part ul li.box .img_part:hover .bg-wh{background-color: rgba(255,255,255,0.4);}
+#sec_5 .wrap .slide_part ul li.box .img_part:hover .bg-wh span{opacity: 1;}
+
+#sec_5 .wrap .slide_part ul li.box .txt_part{width: 100%; padding-top: 30px; text-align: center;}
+#sec_5 .wrap .slide_part ul li.box .txt_part h4{font-family: 'PT Serif', serif; font-size: 26px; line-height: 31px; font-weight: 400; transition: color 0.5s; cursor: pointer; margin: 0 2px; text-transform: uppercase;}
+#sec_5 .wrap .slide_part ul li.box .txt_part h4:hover{color: #a8642a;}
+
+
+#sec_5 .wrap .slide_part ul li.box .txt_part .tag{padding: 10px 0;}
+#sec_5 .wrap .slide_part ul li.box .txt_part .tag > a{font-size: 12px; line-height: 18px; font-weight: 400; color: #a5a8aa;}
+#sec_5 .wrap .slide_part ul li.box .txt_part p{font-size: 16px; line-height: 26px; font-weight: 400; padding-bottom: 20px;}
+#sec_5 .wrap .slide_part ul li.box .txt_part > a{display: block; font-size: 10px; line-height: 27px; color: #fff; font-weight: 500; width: 90px; background-color: #000; text-align: center; cursor: pointer; transition: background-color 0.5s; text-transform: uppercase; margin: 0 auto;}
+#sec_5 .wrap .slide_part ul li.box .txt_part > a:hover{background-color: #a8642a;}
+
+#sec_5 .wrap .slide_part .next{position: absolute; right: 0; top: 55%; transform: translateY(-50%); font-size: 30px; cursor: pointer;}
+#sec_5 .wrap .slide_part .prev{position: absolute; left: 0; top: 55%; transform: translateY(-50%); font-size: 30px; cursor: pointer;}
+
+
+/* sec_6 */
+#sec_6{width: 100%; padding-bottom: 80px;}
+#sec_6 ul{width: 100%; display: flex;}
+#sec_6 ul li{width: calc(100% / 8); height: 240px; background-color: #aaffff; background-size: cover; background-position: 50% 50%; background-repeat: no-repeat;}
+#sec_6 ul li .bg-wh{width: 100%; height: 100%; background-color: rgba(255,255,255,0); transition: background-color 0.5s; cursor: pointer;}
+#sec_6 ul li:hover .bg-wh{background-color: rgba(255,255,255,0.6);}
+
+#sec_6 .txt{width: 100%; text-align: center; padding-top: 30px;}
+#sec_6 .txt span{font-family: 'PT Serif', serif; font-size: 20px; line-height: 24px; font-weight: 400; font-style: italic; cursor: pointer;}
+#sec_6 .txt span:nth-child(2){color: #a8642a;}
+/* 텍스트 밑에 애니메이션은 어떻게 하는걸까? */
+
+
+#dark_bg{width: 100%; height: 100%; background-color: rgba(0,0,0,0.7); position: fixed; top: 0; left: 0; opacity: 0; z-index: -1;}
+#popup{width: 300px; height: 400px; background-color: #fff; position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); opacity: 0; z-index: -1; background-size: cover; background-position: 50% 50%;}
+#popup .close{position: absolute; color: #fff; font-size: 40px; right: -50px; top: -50px; cursor: pointer;}
+#popup .index{position: absolute; color: #fff; font-size: 20px; top: -40px;}
+#popup .index p{}
+#popup .index p span{}
+
+#popup .next{position: absolute; color: #fff; font-size: 40px; right: -500px; top: 50%; transform: translateY(-50%); cursor: pointer;}
+#popup .prev{position: absolute; color: #fff; font-size: 40px; left: -500px; top: 50%; transform: translateY(-50%); cursor: pointer;}
+/* 브라우저 크기에 맞춰서 버튼들을 만드는 방법이 뭘까..? */
+
+#dark_bg.active{opacity: 1; z-index: 5; transition: opacity 0.5s;}
+#popup.active{opacity: 1; z-index: 6; transition: opacity 0.5s;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
