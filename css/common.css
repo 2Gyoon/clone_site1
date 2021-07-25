@@ -22,7 +22,7 @@ header .wrap .menu ul{display: flex;}
 header .wrap .menu ul li{}
 header .wrap .menu ul li a{margin-right: 31px; display: block; padding-top: 10px;color: #000; font-size: 14px; text-transform: uppercase;  border-top: 1px solid transparent;}
 header .wrap .menu ul li:hover a{border-top: 1px solid #000; transition: border-top 0.5s;}
-
+header .wrap .menu ul li:nth-child(2) a{color: red;}
 header .wrap .logo{}
 header .wrap .logo a{display: block; width: 132px; margin: 0 auto;}
 header .wrap .logo a img{display: block;}
